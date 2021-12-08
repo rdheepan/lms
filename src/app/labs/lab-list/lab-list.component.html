@@ -1,0 +1,13 @@
+<app-page-header></app-page-header>
+
+<div class="row pt-2">
+    <div class="col-3 g-5" *ngFor="let lab of labs$ | async">
+        <div class="card p-3">
+            <img [src]="lab.thumbnailUrl" class="card-img-top" alt="Thumbnail">
+            <div class="card-body">
+                {{lab.title}}
+            </div>
+            <button class="btn btn-primary float-end btn-shadow" (click)="start(lab)">Start</button>
+        </div>
+    </div>
+</div>
