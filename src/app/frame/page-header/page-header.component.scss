@@ -1,0 +1,41 @@
+.page-header {
+  background: linear-gradient(#ffa600ee, #c07d00);
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-link {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.navbar-link:hover {
+  background-color: #c07d00;
+  outline: 1px solid black;
+}
+
+.page-header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header aws-img"
+    "topnavbar aws-img";
+}
+.header {
+  grid-area: header;
+}
+.topnavbar {
+  grid-area: topnavbar;
+}
+.aws-img {
+  grid-area: aws-img;
+}
+
+.aws-img {
+  max-height: 150px;
+}
